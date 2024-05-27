@@ -26,30 +26,30 @@
             <div class="col-lg-8 col-md-10">
                 <div class="card shadow-sm">
                     <div class="card-body">
-                        <h1 class="card-title text-center">Upload PDF for Digital Signature</h1>
+                        <h1 class="card-title text-center">Unggah Dokumen</h1>
                         <form id="uploadForm" action="/upload" method="post" enctype="multipart/form-data">
                             <div class="mb-3">
-                                <label for="file" class="form-label">Select PDF file</label>
+                                <label for="file" class="form-label">Pilih file dokumen (PDF)</label>
                                 <input type="file" name="file" accept=".pdf" class="form-control" required>
                             </div>
                             <div class="mb-3">
-                                <label for="name" class="form-label">Name</label>
+                                <label for="name" class="form-label">Nama</label>
                                 <input type="text" name="name" class="form-control" required>
                             </div>
                             <div class="mb-3">
-                                <label for="subject" class="form-label">Subject</label>
+                                <label for="subject" class="form-label">Perihal</label>
                                 <input type="text" name="subject" class="form-control" required>
                             </div>
                             <div class="mb-3">
-                                <label for="x" class="form-label">X Position</label>
+                                <label for="x" class="form-label">Posisi X</label>
                                 <input type="number" name="x" value="200" class="form-control" required>
                             </div>
                             <div class="mb-3">
-                                <label for="y" class="form-label">Y Position</label>
+                                <label for="y" class="form-label">Posisi Y</label>
                                 <input type="number" name="y" value="360" class="form-control" required>
                             </div>
                             <div class="mb-3">
-                                <label for="size" class="form-label">Size (Width and Height)</label>
+                                <label for="size" class="form-label">Ukuran (pixel)</label>
                                 <input type="number" name="size" value="75" class="form-control" required>
                             </div>
                             <div class="d-grid">
@@ -58,7 +58,7 @@
                             </div>
                         </form>
                         <div class="preview" id="preview" style="display: none;">
-                            <h2 class="mt-4 text-center">Preview Signed PDF</h2>
+                            <h2 class="mt-4 text-center">Preview Dokumen</h2>
                             <embed id="pdfPreview" type="application/pdf" style="width:100%; height:600px;">
                             <br><br>
                             <div class="text-center">

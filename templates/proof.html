@@ -17,14 +17,14 @@
             <div class="col-lg-8 col-md-10">
                 <div class="card shadow-sm">
                     <div class="card-body">
-                        <h1 class="card-title text-center">Proof of Ownership</h1>
-                        <p><strong>Name:</strong> {{ name }}</p>
-                        <p><strong>Subject:</strong> {{ subject }}</p>
-                        <p><strong>Date of Sign:</strong> {{ date }}</p>
+                        <h1 class="card-title text-center">Bukti Kepemilikan:</h1>
+                        <p><strong>Nama:</strong> {{ name }}</p>
+                        <p><strong>Perihal:</strong> {{ subject }}</p>
+                        <p><strong>Tanggal di tandatangan:</strong> {{ date }}</p>
                         <p><strong>Signature:</strong> <span id="signature" class="hidden-signature">{{ signature }}</span></p>
                         <button id="revealButton" class="btn btn-primary">Click to Reveal Signature</button>
                         <hr>
-                        <h2 class="text-center">Signed PDF Preview</h2>
+                        <h2 class="text-center">Preview Dokumen:</h2>
                         <embed src="{{ signed_pdf_url }}" type="application/pdf" width="100%" height="600px">
                     </div>
                 </div>
